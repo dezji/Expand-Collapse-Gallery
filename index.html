@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="lightMode.css">
+    <link rel="stylesheet" href="darkMode.css" >
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap">
+    <script src="mode_switch_toggle.js"></script>
+    <title>jQuery</title>
+</head>
+<body>
+
+    <div class="flex-container" id="header_container">
+       <ul> 
+           <li style="float: left"><h2 id="header">Knowledge Check - Deziallia Morris</h2></li>
+           <li><h2 id="mode_switch" onclick="mode_switch_toggle()">Light Mode</h2></li>
+           <li id="links">
+            <button id="link_button"><h2>Links</h2></button>
+            <div id="link_menu">
+                <a href="expand_collapse/index.html" target="_blank">Expand and Collapse</a>
+                <a href="image_gallery/index.html" target="_blank">Image Gallery</a>
+            </div> <!-- end of link menu-->
+            </li> 
+        </ul> <!-- end of list-->
+    </div> <!-- end of header_container-->
+
+    <div id="main_container">
+        <div id="content_container">
+            <div id="content_title"><label>Assignment</label></div>
+                <div id="prompt">
+                    Provide a detailed explanation for the following questions.<br>
+                    You may choose to use a table to answer this week's questions. 
+                    You will use the jQuery method explanations for another assignment later in the course.<br>
+                    Do not delete this assignment even after a grade has been posted.<br><br>
+
+                    Describe two ways to include the jQuery library in your web pages.<br><br>
+                    Describe the use of these jQuery methods for working with forms and controls: <br>
+                    val(), text(), next(), submit(), and focus()<br><br>
+                    Describe the use of these jQuery methods: <br>
+                    prev(), find(), attr(), css(), addClass(), removeClass(), toggleClass(), html(), hide(), show(), and each()<br><br>
+                    Describe the use of these jQuery event methods: <br>
+                    ready(), click(), mouseover(), and hover()
+                </div>
+                <div id="answer">
+                    <i>
+                        <p>
+                            The first way to include the jQuery library in a web page is to after downloading jQuery from the jQuery download page 
+                            then, link it in the code using the script element and the src attribute.
+                        </p>
+                        <p>
+                            Another way to include the jQuery library in a web page is to get the file from a CDN and link it using the script element 
+                            and the src attribute. 
+                        </p>
+                        <br>
+                        <p>The val() method can both get and set the value in a given text box / control in a form.</p>
+                        <p>The text() method can also get and set but the difference is that it deals with the text of a given element in a form.</p>
+                        <p>The next() method can get the next sibling of a given element or type in a form; but the type has to be included in the parentheses as a parameter.</p>
+                        <p>The submit() method is the same as a JS submit in that it can submit the given form.</p>
+                        <p>The focus() method is also similar to its JS counterpart; it moves the focus to a given control in a form.</p>
+                        <br>
+                        <p>The prev() method can get the previous sibling of the given element or a sibling of a given type.</p>
+                        <p>The find() method can search through the given element and output its descended elements.</p>
+                        <p>
+                            The attr() method can get and set the value of the given parameter's attribute but it only 
+                            gets the value from the first selected element while setting the value can be for each selected element.
+                        </p>
+                        <p>
+                            The css() method can get and set the value of a propert but it can only get the first selected element's property 
+                            and it can set the value for each selected element's property.
+                        </p>
+                        <p>The addClass() method can add classes to the selected elements and if the class doesn't exist, it creates the class.</p>
+                        <p>The removeClass() method just removes the classes specified in the argument.</p>
+                        <p>The toggleClass() method can add a class to the selected element and remove a class if the selected element has one.</p>
+                        <p>The html() method can set the HTML contents of the selected element to whatever the argument presented is.</p>
+                        <p>
+                            The hide() method just hides the selected elements. A duration can be entered (optionally) as a parameter to determine how long 
+                            the element is hidden for.
+                        </p>
+                        <p>The show() method is just like the hide() method excepts it shows the selected elements, and the duration (optional) can be set.</p>
+                        <p>The each() method can call a function for each element in an selected element's array.</p>
+                        <br>
+                        <p>The ready() event method is just like the window.onload event, but it runs when the DOM is ready, so it is faster than its 
+                            JavaScript counterpart.
+                        </p>
+                        <p>The click() event method is just like the JavaScript onclick event in that it runs the function when the element is clicked.</p>
+                        <p>The mouseover() event method runs its function when the mouse moves over the element in question.</p>
+                        <p>The hover() event method runs when the mouse into a given element and when the mouse moves out of said given element.</p>
+                    </i>
+                </div>
+                <div id="citation">
+                    <br>
+                    <p>
+                    <i>
+                        Delamater, M. and Ruvalcaba, Z., n.d. Murach's JavaScript and jQuery. 3rd ed
+                    </i>
+                    </p>
+                </div>
+        </div> <!-- end of content_container-->
+        <div id="images_container">
+            <div id="image_title"><label>Images</label></div>
+            <div id="images">
+                <img class="images" src="images/screen1.png">
+                <img class="images" src="images/screen2.png">
+                <img class="images" src="images/screen3.png">
+        </div> <!-- end of images_container-->
+        <div id="footer"></div>
+    </div> <!-- end of main_container-->
+</body>
+</html>
